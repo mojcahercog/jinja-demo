@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <p>Hello, index.html here!</p>
+
+    {{current_year}}
+
+    <ul>
+    {% for city in cities %}
+        <li>{{city}}</li>
+    {% endfor %}
+    </ul>
+{% endblock content %}
